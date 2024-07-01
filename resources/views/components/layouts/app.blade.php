@@ -10,6 +10,9 @@
     <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('vendors/mdi/css/materialdesignicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('vendors/css/vendor.bundle.base.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>
@@ -45,7 +48,6 @@
     <script src="{{ asset('js/off-canvas.js') }}"></script>
     <script src="{{ asset('js/hoverable-collapse.js') }}"></script>
     <script src="{{ asset('js/template.js') }}"></script>
-    <script src="{{ asset('js/jquery.cookie.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/dashboard.js') }}"></script>
     <script src="{{ asset('js/file-upload.js') }}"></script>
     <script src="{{ asset('js/chart.js') }}"></script>
