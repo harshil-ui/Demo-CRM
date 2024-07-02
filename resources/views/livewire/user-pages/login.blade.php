@@ -9,20 +9,22 @@
                           </div>
                           <h4>Hello! let's get started</h4>
                           <h6 class="font-weight-light">Sign in to continue.</h6>
-                          <form class="pt-3">
+                          <form class="pt-3" wire:submit="login">
                               <div class="form-group">
-                                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
-                                      placeholder="Username">
+                                  <input type="email" class="form-control form-control-lg" placeholder="Email"
+                                      wire:model="email">
                               </div>
                               <div class="form-group">
-                                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
-                                      placeholder="Password">
+                                  <input type="password" class="form-control form-control-lg" placeholder="Password"
+                                      wire:model="password">
                               </div>
                               <div class="mt-3">
-                                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                                      href="../../index.html">SIGN IN</a>
+                                  <button type="submit"
+                                      class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">
+                                      Login
+                                  </button>
                               </div>
-                              <div class="my-2 d-flex justify-content-between align-items-center">
+                              {{-- <div class="my-2 d-flex justify-content-between align-items-center">
                                   <div class="form-check">
                                       <label class="form-check-label text-muted">
                                           <input type="checkbox" class="form-check-input">
@@ -38,7 +40,7 @@
                               </div>
                               <div class="text-center mt-4 font-weight-light">
                                   Don't have an account? <a href="register.html" class="text-primary">Create</a>
-                              </div>
+                              </div> --}}
                           </form>
                       </div>
                   </div>

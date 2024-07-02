@@ -2,7 +2,6 @@
 
 namespace App\Livewire\Pages;
 
-use Livewire\Attributes\Reactive;
 use Livewire\Component;
 
 class Home extends Component

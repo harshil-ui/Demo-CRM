@@ -67,9 +67,12 @@
                 </a>
                 <div class="collapse" id="auth">
                     <ul class="nav flex-column sub-menu">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}" wire:navigate> Login </a>
+                        {{-- <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}" wire:navigate> Login </a>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}" wire:navigate> Logout </a>
                         </li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('login-2') }}" wire:navigate> Login 2
+                        {{-- <li class="nav-item"> <a class="nav-link" href="{{ route('login-2') }}" wire:navigate> Login 2
                             </a>
                         </li>
                         <li class="nav-item"> <a class="nav-link" href="{{ route('register') }}" wire:navigate> Register
@@ -77,7 +80,7 @@
                         <li class="nav-item"> <a class="nav-link" href="{{ route('register-2') }}" wire:navigate>
                                 Register
                                 2
-                            </a></li>
+                            </a></li> --}}
                     </ul>
                 </div>
             </li>
