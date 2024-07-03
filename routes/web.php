@@ -1,5 +1,6 @@
 <?php
 
+use App\Jobs\SendMailJob;
 use App\Livewire\Charts\Chartjs;
 use App\Livewire\Forms\BasicElements;
 use App\Livewire\Icons\Mdi;
@@ -40,3 +41,12 @@ Route::get('/register', Register::class)->name('register');
 Route::get('/register-2', Register2::class)->name('register-2');
 
 Route::get('/logout', LogOut::class)->name('logout');
+
+Route::get('/send-mail', function () {
+    $name = 'Jaydeep';
+    // dispatch(function () {
+    //     Mail::to('learningharshil1@gmail.com')->send(new MyTestMail($name));
+    // });
+
+    dispatch(new SendMailJob($name));
+});
