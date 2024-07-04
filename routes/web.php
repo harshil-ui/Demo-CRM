@@ -12,6 +12,7 @@ use App\Livewire\UiFeatures\Typography;
 use App\Livewire\UserPages\Login;
 use App\Livewire\UserPages\Register;
 use App\Livewire\UserPages\Register2;
+use App\Services\RabbitMQService;
 use Illuminate\Support\Facades\Route;
 
 
@@ -49,4 +50,9 @@ Route::get('/send-mail', function () {
     // });
 
     dispatch(new SendMailJob($name));
+});
+
+Route::get('/send-message', function () {
+    $rabbitMQservice = new RabbitMQService();
+    $rabbitMQservice->sendMessage("hi I am harshil");
 });
